@@ -140,3 +140,7 @@ def winner(board)
   end
   nil
 end
+
+def play(board)
+  until over?(board)
+    
