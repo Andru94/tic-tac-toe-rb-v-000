@@ -21,7 +21,7 @@ def input_to_index(input)
 input.to_i - 1
 end
 
-def move(array, index, player = "X")
+def move(array, index, player)
   array[index] = player
 end
 
@@ -147,8 +147,8 @@ def play(board)
   end
 
   if won?(board)
-    puts "Congratulations"
+    puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-    puts "It's a draw"
+    puts "Cat's Game!"
   end
 end
