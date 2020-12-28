@@ -62,3 +62,15 @@ def turn(board)
       puts "Please enter 1-9:"
     end
 end
+
+def turn_count(board)
+  counter = 0
+
+  board.each do |cell|
+    if cell == "X" || cell == "O"
+      counter += 1
+    end
+  end
+
+  counter
+end
